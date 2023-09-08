@@ -1,0 +1,68 @@
+log:
+  # 可选项有：trace debug info warn error critical off
+  level: info
+
+mongo:
+  # mongodb地址
+  # uri: "mongodb://admin:dev1admin@dev1.internal.tsingroc.tech:27017"
+  uri: "mongodb://root:root%400226@rl1.tsingroc.tech:27017"
+  # 地图
+  map:
+    db: "v2"
+    col: "map_beijing5ring_0424"
+  # 通信拓扑
+  comm_topo:
+    db: "v2"
+    col: "comm_beijing5ring_0625"
+  # 通信需求
+  comm_demand:
+    db: "yuqiaohong"
+    col: "comm_baoyu_new"
+  # # 通信射线跟踪
+  # ray_tracing_loss:
+  #   db: "yuqiaohong"
+  #   col: "ray_tracing_loss_guomao_new"
+
+control:
+  step:
+    # 模拟器起始步
+    start: 25200 # 早6点
+    # 模拟总步数，结束步为起始步+总步数
+    total: 1800 # 6小时
+    # 每步的时间间隔
+    interval: 1.0
+  thread:
+    # 多线程使用的线程数，0代表使用所有线程
+    worker: 0
+    # 每个线程处理的任务块大小（调优参数）
+    block_size: 250
+  # 模拟器车辆输出范围（经纬度坐标）
+  microscopic_range: # 国贸
+    min_longitude: 116.45466845743775
+    min_latitude: 39.90635904559525
+    max_longitude: 116.4727503404667
+    max_latitude: 39.92235997926467
+  macroscopic_range: # 五环
+    min_longitude: 116.2017
+    min_latitude: 39.7563
+    max_longitude: 116.5443
+    max_latitude: 40.0231
+  enable_controlled: true
+  enable_optimize: false
+  optimize_interval: 8
+  display_guomao: true
+  coverage_range: 1000
+  handover_interval: 1
+  channel_type: 1
+  antenna_type: 1
+
+output:
+  target:
+    # sql: "postgres://sim:WZ8RDE7woHwBhRKp1UIP55Yjio5SHr7y@pg-visual.db.internal.tsingroc.tech/simulation"
+    sql: "postgres://postgres:U59WQA3pwKsaDDt6fVtJetMpnvBfSgsS@rl1.tsingroc.tech/simulation?sslmode=disable"
+  switch:
+    person: false
+    base_station: false
+    aoi: false
+    heatmap: false
+    stats: true
