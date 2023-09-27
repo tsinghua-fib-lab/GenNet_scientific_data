@@ -105,7 +105,7 @@ mean_rate: Mean rate over time period T (rate is related to received signal stre
 ### Coverage Optimization RL Code User Guide
 
 First, use the following command to activate the client and realize the link with the simulator:
-./common_docker config/……/common_client/pycomm/pycomm/update_config.yml -rl true
+./common_docker config/……/common_client/pycomm/pycomm/config.yml -rl true
 Open a new shell and activate the conda environment:
 
 source activate torch-1.9.0-py37
