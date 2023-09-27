@@ -4,8 +4,7 @@ log:
 
 mongo:
   # mongodb地址
-  # uri: "mongodb://admin:dev1admin@dev1.internal.tsingroc.tech:27017"
-  uri: "mongodb://root:root%400226@rl1.tsingroc.tech:27017"
+  uri: "mongodb://username:password@host:port/database"
   # 地图
   map:
     db: "v2"
