@@ -1,47 +1,47 @@
 log:
-  # 可选项有：trace debug info warn error critical off
+  # Options include: trace debug info warn error critical off
   level: info
 
 mongo:
-  # mongodb地址
+  # MongoDB address
   uri: "mongodb://username:password@host:port/database"
-  # 地图
+  # map
   map:
     db: "v2"
     col: "map_beijing5ring_0424"
-  # 通信拓扑
+  # Communication Topology
   comm_topo:
     db: "v2"
     col: "comm_beijing5ring_0625"
-  # 通信需求
+  # Communication Demand
   comm_demand:
     db: "yuqiaohong"
     col: "comm_baoyu_new"
-  # # 通信射线跟踪
+  # # Communication Ray Tracing
   # ray_tracing_loss:
   #   db: "yuqiaohong"
   #   col: "ray_tracing_loss_guomao_new"
 
 control:
   step:
-    # 模拟器起始步
-    start: 25200 # 早6点
-    # 模拟总步数，结束步为起始步+总步数
-    total: 1800 # 6小时
-    # 每步的时间间隔
+    # Simulator Start Step
+    start: 25200 # 6:00 AM
+    # Total Simulation Steps, End Step is Start Step + Total Steps
+    total: 1800 # 6 Hours
+    # Time Interval per Step
     interval: 1.0
   thread:
-    # 多线程使用的线程数，0代表使用所有线程
+    #  Number of Threads Used in Multi-Threading, 0 Represents Using All Threads
     worker: 0
-    # 每个线程处理的任务块大小（调优参数）
+    # Task Block Size Processed by Each Thread (Tuning Parameter)
     block_size: 250
-  # 模拟器车辆输出范围（经纬度坐标）
-  microscopic_range: # 国贸
+  # Simulator Vehicle Output Range (Latitude and Longitude Coordinates)
+  microscopic_range: # Beijing Guomao
     min_longitude: 116.45466845743775
     min_latitude: 39.90635904559525
     max_longitude: 116.4727503404667
     max_latitude: 39.92235997926467
-  macroscopic_range: # 五环
+  macroscopic_range: # Beijing Fifth Ring Road
     min_longitude: 116.2017
     min_latitude: 39.7563
     max_longitude: 116.5443
