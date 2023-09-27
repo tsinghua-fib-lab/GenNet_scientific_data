@@ -54,3 +54,76 @@ To support your experiments and research, we include a comprehensive set of synt
 ## README Documentation
 
 For detailed instructions on how to get started, configure, and use GenNet, please refer to the README documentation provided in this repository.
+
+
+# Utilization of GenNet
+
+GenNet is a powerful software tool that serves as "A Generative AI-Powered Synthetic Data Ecosystem for Mobile Networks." This part provides a comprehensive guide on how to use GenNet, including startup parameters with examples and detailed explanations for all possible parameter values in the configuration file.
+
+## Startup Parameters and Their Meanings
+
+GenNet accepts several startup parameters that control its behavior. Here are the main parameters with examples and their meanings:
+
+- `job`: Specifies the name of the whole simulation task. (Example: `"job0"`)
+- `grpcEndpoint`: Sets the gRPC listening address. (Example: `"localhost:51402"`)
+- `pprofAddr`: Specifies the pprof listening address for debugging and profiling purposes. 
+- `configPath`: Specifies the path to the configuration file. (Example: `"config.yml"`)
+- `useRL`: Allows you to use Reinforcement Learning (RL) for optimization instead of normal simulation. (Example: `true` or `false`)
+
+## How to Use GenNet
+
+To use GenNet, follow these steps:
+
+1. **Download Files**: Ensure that the complete `pycomm` folder and the RL optimization code are placed in the main directory.
+
+2. **Start the Simulator**: Open a terminal and navigate to the directory containing GenNet. Use the following command to start the simulator: ./comm_docker -rl -config config.yml -listen "localhost:port_xxx" -h. Replace `"port_xxx"` with the desired port number for the listening address.
+
+3. **Start Interaction**: Open a new shell and activate the conda environment to initiate RL interaction.
+
+## Configuration File Options
+
+The `config.yml` file contains various configuration options. Here are detailed explanations for all possible parameter values:
+
+- `ChannelType`: Specifies the type of channel used in the simulation. Possible values:
+  - `CHANNEL_TYPE_UNSPECIFIED` (0)
+  - `CHANNEL_TYPE_EQUATION` (1)    // Based on ray tracing
+  - `CHANNEL_TYPE_RAY_TRACING` (2)
+  - `CHANNEL_TYPE_3GPP` (3)
+  - `CHANNEL_TYPE_FREESPACE` (4)    //	Based on electromagnetic computation.
+  - `CHANNEL_TYPE_CEM` (5)
+
+- `AntennaType`: Specifies the type of antenna used in the simulation. Possible values:
+  - `ANTENNA_TYPE_UNSPECIFIED` (0)
+  - `ANTENNA_TYPE_SISO` (1)
+  - `ANTENNA_TYPE_MIMO` (2)
+
+- `Control`: Controls various aspects of the simulation, such as steps, threads, and display options.
+  - `step` (ControlStep): Specifies the control step.
+  - `thread` (ControlThread): Specifies the control thread.
+  - `microscopic_range` (ControlOutput): Defines the range of the microscopic area.
+  - `macroscopic_range` (ControlOutput): Defines the range of the macroscopic area.
+  - `enable_controlled` (bool): Indicates whether the simulator uses external control.
+  - `enable_optimize` (bool): Specifies if communication uses optimized allocation.
+  - `optimize_interval` (optional int32): Sets the communication optimization allocation interval in steps.
+  - `display_guomao` (bool): Determines whether to display the microscopic area.
+  - `coverage_range` (double): Sets the initial coverage range of base stations in meters.
+  - `handover_interval` (int32): Defines the handover frequency of base stations in seconds.
+  - `channel_type` (ChannelType): Specifies the channel model used in the simulation.
+  - `antenna_type` (AntennaType): Specifies the type of antenna used in the simulation.
+
+- `OutputSwitch`: Specifies which types of data to output. Options include:
+  - `person` (1)
+  - `base_station` (2)
+  - `aoi` (3)
+  - `heatmap` (4)
+  - `stats` (5)
+
+## Database Dependencies
+
+GenNet relies on a MongoDB database for its functionality. Make sure you have MongoDB installed and configured properly.
+
+---
+
+For more detailed information and specific instructions, please refer to the RL Algorithm User Guide. If you have any further questions or need assistance, please don't hesitate to reach out.
+
+**Note**: Ensure that you have all the necessary dependencies and permissions to run GenNet effectively.
