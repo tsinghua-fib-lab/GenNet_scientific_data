@@ -106,7 +106,7 @@ To use GenNet, follow these steps:
 
 3. **Start Interaction**: Open a new shell and activate the conda environment to start RL interaction.
 
-## Precautions##
+## Precautions
 
 1.If you use a docker virtual machine, you need to install version 15.0 of the libprof library
 
