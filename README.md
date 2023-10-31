@@ -100,11 +100,11 @@ Note: The command assumes that the comm executable file is located in the curren
 
 To use GenNet, follow these steps:
 
-1. **Download Files**: Ensure that the complete 'pycomm' folder, 'data' folder, config file, and optimization code (user's own code) are placed in the main directory (the pycomm folder needs to be placed in the subdirectory of the optimized code)
+1. **Download Files**: Make sure to place the complete 'pycomm' folder, 'data' folder, the configuration file, and the optimization code (user's own code) in the main directory. (The 'pycomm' folder should be located within a subdirectory of the optimization code.)
 
-2. **Start the Simulator**: Open a terminal and navigate to the directory containing GenNet. Start the emulator with the following command: ./comm -config /path/config.yml -job test -rl
+2. **Start the Simulator**: Open a terminal and navigate to the directory where GenNet is located. Start the emulator with the following command: ./comm -config /path/config.yml -job test -rl.
 
-3. **Start Interaction**: Open a new shell and activate the conda environment to start RL interaction.
+3. **Start Interaction**: Open a new terminal and activate the Conda environment to initiate the RL interaction.
 
 ## Precautions
 
