@@ -110,7 +110,7 @@ To use GenNet, follow these steps:
 
 1.If you use a docker virtual machine, you need to install version 15.0 of the libprof library
 
-2.data file download address:
+2.data file download address:https://github.com/tsinghua-fib-lab/GenNet_scientific_data/releases/tag/v1.0.1
 
 3.the pycomm folder needs to be placed in the subdirectory of the optimized code
 
