@@ -100,11 +100,11 @@ Note: The command assumes that the comm executable file is located in the curren
 
 To use GenNet, follow these steps:
 
-1. **Download Files**: Ensure that the complete `pycomm` folder and the RL optimization code are placed in the main directory.
+1. **Download Files**: Ensure that the complete 'pycomm' folder, 'data' folder, config file, and optimization code (user's own code) are placed in the main directory (the pycomm folder needs to be placed in the subdirectory of the optimized code)
 
-2. **Start the Simulator**: Open a terminal and navigate to the directory containing GenNet. Use the following command to start the simulator: ./comm_docker -rl -config config.yml -listen "localhost:port_xxx" -h. Replace `"port_xxx"` with the desired port number for the listening address.
+2. **Start the Simulator**: Open a terminal and navigate to the directory containing GenNet. Start the emulator with the following command: ./comm -config /path/config.yml -job test -rl
 
-3. **Start Interaction**: Open a new shell and activate the conda environment to initiate RL interaction.
+3. **Start Interaction**: Open a new shell and activate the conda environment to start RL interaction.
 
 ## Configuration File Options
 
