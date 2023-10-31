@@ -106,6 +106,14 @@ To use GenNet, follow these steps:
 
 3. **Start Interaction**: Open a new shell and activate the conda environment to start RL interaction.
 
+## Precautions##
+
+1.If you use a docker virtual machine, you need to install version 15.0 of the libprof library
+
+2.data file download address:
+
+3.the pycomm folder needs to be placed in the subdirectory of the optimized code
+
 ## Configuration File Options
 
 The `config.yml` file contains various configuration options. Here are detailed explanations for all possible parameter values:
