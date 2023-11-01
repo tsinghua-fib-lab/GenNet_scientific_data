@@ -51,6 +51,8 @@ To support your experiments and research, we include a comprehensive set of synt
 - **Wireless Environment Data:** Detailed information on signal strengths, interference, and network topology.
 - **Network Performance Data:** Metrics and statistics related to network performance.
 
+We provide datasets for two different scenarios (a1c1 and a1c2), which include User Data, Wireless Environment Data, and Network Performance Data. Please refer to the download files. In this context, a1c1 refers to the data obtained using antenna modeling method one and channel modeling method one, while a1c2 refers to the data obtained using antenna modeling method one and channel modeling method two. It is important to note that the provided data serves as sample data for specific scenarios. Users can customize different scenarios as needed and collect the corresponding User Data, Wireless Environment Data, and Network Performance Data.
+
 ## README Documentation
 
 For detailed instructions on how to get started, configure, and use GenNet, please refer to the README documentation provided in this repository.
