@@ -51,7 +51,7 @@ To support your experiments and research, we include a comprehensive set of synt
 - **Wireless Environment Data:** Detailed information on signal strengths, interference, and network topology.
 - **Network Performance Data:** Metrics and statistics related to network performance.
 
-We provide datasets for two different scenarios (a1c1 and a1c2), which include User Data, Wireless Environment Data, and Network Performance Data. Please refer to the download files. In this context, a1c1 refers to the data obtained using antenna modeling method one and channel modeling method one, while a1c2 refers to the data obtained using antenna modeling method one and channel modeling method two. It is important to note that the provided data serves as sample data for specific scenarios. Users can customize different scenarios as needed and collect the corresponding User Data, Wireless Environment Data, and Network Performance Data.
+We provide datasets for two different scenarios (a1c1 https://github.com/tsinghua-fib-lab/GenNet_scientific_data/releases/download/v1.0.1/a1c1.tar.gz and a1c2 https://github.com/tsinghua-fib-lab/GenNet_scientific_data/releases/download/v1.0.1/a1c2.tar.gz), which include User Data, Wireless Environment Data, and Network Performance Data. Please refer to the download files. In this context, a1c1 refers to the data obtained using antenna modeling method one and channel modeling method one, while a1c2 refers to the data obtained using antenna modeling method one and channel modeling method two. It is important to note that the provided data serves as sample data for specific scenarios. Users can customize different scenarios as needed and collect the corresponding User Data, Wireless Environment Data, and Network Performance Data.
 
 ## README Documentation
 
@@ -102,7 +102,7 @@ Note: The command assumes that the comm executable file is located in the curren
 
 To use GenNet, follow these steps:
 
-1. **Download Files**: Make sure to place the complete 'pycomm' folder, 'data' folder, the configuration file, and the optimization code (user's own code) in the main directory. (The 'pycomm' folder should be located within a subdirectory of the optimization code.)
+1. **Download Files**: Make sure to place the complete 'pycomm' folder https://github.com/tsinghua-fib-lab/GenNet_scientific_data/releases/download/v1.0.1/comm, 'data' folder, the configuration file https://github.com/tsinghua-fib-lab/GenNet_scientific_data/releases/download/v1.0.1/update_config.yml, and the optimization code (user's own code) in the main directory. (The 'pycomm' folder should be located within a subdirectory of the optimization code.)
 
 2. **Start the Simulator**: Open a terminal and navigate to the directory where GenNet is located. Start the emulator with the following command: ./comm -config /path/config.yml -job test -rl.
 
