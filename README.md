@@ -29,7 +29,7 @@ This repository includes the following key components:
 
 GenNet is an interactive simulator designed to generate a Synthetic Data Ecosystem for Mobile Communication Networks. It allows researchers and developers to emulate mobile network scenarios and experiment with various parameters. In this release, you will find:
 
-- **the GenNet Executable (GenNet):** The core executable file for running the GenNet simulator.
+- **the GenNet Executable (GenNet):** The core executable file for running the GenNet simulator. (https://github.com/tsinghua-fib-lab/GenNet_scientific_data/releases/download/v1.0.1/GenNet)
 
 ## pycomm
 
@@ -37,7 +37,7 @@ GenNet is an interactive simulator designed to generate a Synthetic Data Ecosyst
 
 ## Reinforcement Learning Optimization Codes
 
-We provide three sets of reinforcement learning optimization codes tailored to enhance the performance of the GenNet simulator in different ways:
+We provide three sets of reinforcement learning optimization codes tailored to enhance the performance of the GenNet simulator in different ways:(https://github.com/tsinghua-fib-lab/GenNet_scientific_data/archive/refs/tags/v1.0.1.zip)
 
 - **Coverage Optimization:** Optimize network coverage and quality of service.
 - **Energy Efficiency Optimization:** Reduce energy consumption in mobile networks.
