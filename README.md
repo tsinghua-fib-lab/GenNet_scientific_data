@@ -37,7 +37,7 @@ GenNet is an interactive simulator designed to generate a Synthetic Data Ecosyst
 
 ## Reinforcement Learning Optimization Codes
 
-We provide three sets of reinforcement learning optimization codes (https://github.com/tsinghua-fib-lab/GenNet_scientific_data/Reinforcement Learning Optimization Codes) tailored to enhance the performance of the GenNet simulator in different ways:
+We provide three sets of reinforcement learning optimization codes (https://github.com/tsinghua-fib-lab/GenNet_scientific_data/tree/main/Reinforcement%20Learning%20Optimization%20Codes) tailored to enhance the performance of the GenNet simulator in different ways:
 
 - **Coverage Optimization:** Optimize network coverage and quality of service.
 - **Energy Efficiency Optimization:** Reduce energy consumption in mobile networks.
