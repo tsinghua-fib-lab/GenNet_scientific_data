@@ -29,9 +29,9 @@ This repository includes the following key components:
 
 GenNet is an interactive simulator designed to generate a Synthetic Data Ecosystem for Mobile Communication Networks. It allows researchers and developers to emulate mobile network scenarios and experiment with various parameters. In this release, you will find:
 
-- **the GenNet Executable:** The core executable file for running the GenNet simulator.
+- **the GenNet Executable (GenNet):** The core executable file for running the GenNet simulator.
 
-## pycomm
+## py
 
 - **pycomm:** A Python reinforcement learning client that facilitates communication with the simulator, enabling dynamic interactions and experiments.
 
@@ -67,7 +67,7 @@ GenNet is a powerful software tool that serves as "A Generative AI-Powered Synth
 GenNet accepts several startup parameters that control its behavior. Here are the main parameters with examples and their meanings:
 
 ```bash
-$ ./comm -h
+$ ./GenNet -h
 simulet-comm: dev
 Usage of ./comm:
   -config string
@@ -91,12 +91,12 @@ Usage of ./comm:
 To run the program, you need to provide the necessary command-line arguments based on your requirements. Here's an example command to run the program:
 
 ```
-./comm -config /path/to/config/file -job job0 -listen localhost:51402
+./GenNet -config /path/to/config/file -job job0 -listen localhost:51402
 ```
 
 Make sure to replace /path/to/config/file with the actual path to your configuration file if required. Additionally, you can adjust the values of the command-line arguments according to your specific needs.
 
-Note: The command assumes that the comm executable file is located in the current directory. If it's in a different directory, you' ll need to provide the correct path to the executable file.
+Note: The command assumes that the GenNet executable file is located in the current directory. If it's in a different directory, you' ll need to provide the correct path to the executable file.
 
 ## How to Use GenNet
 
@@ -104,7 +104,7 @@ To use GenNet, follow these steps:
 
 1. **Download Files**: Make sure to place the complete 'pycomm' folder https://github.com/tsinghua-fib-lab/GenNet_scientific_data/releases/download/v1.0.1/comm, 'data' folder, the configuration file https://github.com/tsinghua-fib-lab/GenNet_scientific_data/releases/download/v1.0.1/update_config.yml, and the optimization code (user's own code) in the main directory. (The 'pycomm' folder should be located within a subdirectory of the optimization code.)
 
-2. **Start the Simulator**: Open a terminal and navigate to the directory where GenNet is located. Start the emulator with the following command: ./comm -config /path/config.yml -job test -rl.
+2. **Start the Simulator**: Open a terminal and navigate to the directory where GenNet is located. Start the emulator with the following command: ./GenNet -config /path/config.yml -job test -rl.
 
 3. **Start Interaction**: Open a new terminal and activate the Conda environment to initiate the RL interaction.
 
