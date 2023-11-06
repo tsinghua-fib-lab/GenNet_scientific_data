@@ -33,11 +33,11 @@ GenNet is an interactive simulator designed to generate a Synthetic Data Ecosyst
 
 ## pycomm
 
-- **pycomm:** A Python reinforcement learning client that facilitates communication with the simulator, enabling dynamic interactions and experiments.
+- **pycomm:** A Python reinforcement learning client (https://github.com/tsinghua-fib-lab/GenNet_scientific_data/pycomm) that facilitates communication with the simulator, enabling dynamic interactions and experiments.
 
 ## Reinforcement Learning Optimization Codes
 
-We provide three sets of reinforcement learning optimization codes tailored to enhance the performance of the GenNet simulator in different ways:(https://github.com/tsinghua-fib-lab/GenNet_scientific_data/archive/refs/tags/v1.0.1.zip)
+We provide three sets of reinforcement learning optimization codes (https://github.com/tsinghua-fib-lab/GenNet_scientific_data/Reinforcement Learning Optimization Codes) tailored to enhance the performance of the GenNet simulator in different ways:
 
 - **Coverage Optimization:** Optimize network coverage and quality of service.
 - **Energy Efficiency Optimization:** Reduce energy consumption in mobile networks.
