@@ -31,7 +31,7 @@ GenNet is an interactive simulator designed to generate a Synthetic Data Ecosyst
 
 - **the GenNet Executable (GenNet):** The core executable file for running the GenNet simulator.
 
-## py
+## pycomm
 
 - **pycomm:** A Python reinforcement learning client that facilitates communication with the simulator, enabling dynamic interactions and experiments.
 
