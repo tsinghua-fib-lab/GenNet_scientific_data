@@ -33,7 +33,7 @@ GenNet is an interactive simulator designed to generate a Synthetic Data Ecosyst
 
 ## pycomm
 
-- **pycomm:** A Python reinforcement learning client (https://github.com/tsinghua-fib-lab/GenNet_scientific_data/pycomm) that facilitates communication with the simulator, enabling dynamic interactions and experiments.
+- **pycomm:** A Python reinforcement learning client (https://github.com/tsinghua-fib-lab/GenNet_scientific_data/tree/main/pycomm) that facilitates communication with the simulator, enabling dynamic interactions and experiments.
 
 ## Reinforcement Learning Optimization Codes
 
